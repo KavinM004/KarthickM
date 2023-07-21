@@ -1,0 +1,23 @@
+p{
+    font-family: 'Lugrasimo', cursive;
+}
+.user{
+    color: blueviolet;
+    background-color: orangered;
+}
+p:focus{
+    background-color: black;
+}
+body{
+    background-color: aquamarine;
+}
+@media(max-width:600px){
+    body{
+        background-color: brown;
+    }
+}
+@media(min-width:600px){
+    body{
+        background-color:red;
+    }
+}
