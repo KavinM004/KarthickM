@@ -2,17 +2,33 @@
 // setTimeout(()=>{
 //     console.log("M")
 // },2000)
-// console.log(" karthick")
+// console.log("karthick")
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-function walk(callbac){
-    console.log("Kavin");
-    callbac();
+// function walk(callbac){
+//     console.log("Kavin");
+//     callbac();
+// }
+
+// function run(){
+//     console.log("Karthick");
+// }
+
+// walk(run);
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function playingCricket(err){
+    console.log("Jolly!!,play Cricket dude:)");
+    setTimeout(() => {
+        console.log("Van coming,Let's hold boy's..")
+        err();
+    }, 2000);
 }
 
-function run(){
-    console.log("Karthick");
+function vanComing(){
+    console.log("Let's continue,boy's");
 }
 
-walk(run);
+playingCricket(vanComing);

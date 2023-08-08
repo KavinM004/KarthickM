@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEvent</title>
+</head>
+<body>
+    <div id="div">
+        <p id="p">Hello,Kavin M..!</p>
+    </div>
+    <script>
+        let targetDiv=document.getElementById("div");
+        let targetP=document.getElementById("p");
+
+        targetDiv.addEventListener("click",function(){
+            targetP.innerText="clicked";
+            targetP.style.backgroundColor="orangered";
+        });
+
+        targetDiv.addEventListener("mouseover",function(){
+            targetP.innerText="mouseover";
+            targetP.style.backgroundColor="yellow";
+        });
+
+        targetDiv.addEventListener("mouseout",function(){
+            targetP.innerText="mouseout";
+            targetP.style.backgroundColor="hotpink";
+        });
+
+        document.addEventListener("keydown",function(){
+            console.log("keydown",event.key);
+        });
+    </script>
+</body>
+</html>
