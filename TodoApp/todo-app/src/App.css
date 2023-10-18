@@ -1,12 +1,16 @@
 body{
-  background-color: orangered;
+  background-color: whitesmoke;
   overflow: hidden;
 }
 
 h1{
   text-align: center;
-  color: whitesmoke;
+  color: palevioletred;
   font-family: monospace;
+  border: 2px solid purple;
+  border-radius: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 
